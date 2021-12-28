@@ -1,0 +1,271 @@
+{% include 'base.html' %}
+{% load static %}
+{% include 'navigation.html' %}
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+{% block content %}
+
+<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicaters">
+        <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-slider" data-slide-to="1"></li>
+        <li data-target="#carousel-slider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-white">
+                <div class="background-1">
+                    <h2>postoperative care</h2>
+                    <p>postoperative care is the care you recive after a sergical procedure the type of postoperative
+                        care you need depends on the type of sergery you have as well as your health history it happen include pain managment and wound care
+                    </p>
+                    <button class="btn btn-light"><a href="#depatments"class="nav-link">see all services</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/1.jfif' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-white">
+                <div class="background-1">
+                    <h2>sergery</h2>
+                    <p>sergery is medical speciality that uses operative manual and instrumental techniues on a person 
+                        to investigate or trat a pathalogical condition such as a disesesor injury to help improve 
+                        bodily funtion or apperence or to repair unwanted rupted areas
+                    </p>
+                    <button class="btn btn-light"><a href="#depatments"class="nav-link">see all the services</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/2.jfif' %}" class="d-block w-100"alt="...">
+            <div class="carousel-caption text-white">
+                <div class="background_1">
+                    <h2>neonatal insentive care unit</h2>
+                    <p>a neonatal insentive care unit also known as an insentive care nursery is an intensive care
+                        unit specilizing in the care of ill or premature newborn infants neonatal refers to the first
+                        28 days of life neonatal as known as specilized nurseries or intensive care has been
+                        around since the 1960s
+                    </p>
+                    <button class="btn btn-light"><a href="#departments" class="nav-link">see all the services</a></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-slider" role="button"data-slide="prev">
+        <span class="carousel-control-prev-icon"aria-hidden="true"></span>
+        <span class="sr-only">next</span>
+    </a>
+</div>
+<div class="container fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/1.jfif' %}">
+        </div>
+        <div class="col-md-4"id="intro text">
+            <h1 class="text-center">
+                <h1 class="text-center">wel come to hospital managment system</h1>
+            </h1>
+            <p class="text-justify">
+            <h5>hospital managment system is a system where you can take any type of service it is located in 
+                tulsipur dung it provide different type of services like radiography different types of sergons with
+                highly reputed docters</h5>
+            </p>
+            <img src="{% static 'images/1.jfif' %}">
+
+        </div>
+        <div class="col-md-4">
+            <div class="container-fluid">
+                <br>
+                <button class="btn btn-lg btn-block"><a href="#about"class="nav-link"><i
+                            class="fa fa-calender-minus-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;request
+                            appointment</a></button>
+                <br>
+                <button class="btn btn-lg btn-block"><a href="#docter"class="nav-link"><i
+                    class="fa fa-user-md"></i>&nbsp;&nbsp;&nbsp;&nbsp;find
+                    docter</a></button>
+                <br>
+                <button class="btn btn-lg btn-block"><a href="#about"class="nav-link"><i
+                    class="fa fa-map-maker"></i>&nbsp;&nbsp;&nbsp;&nbsp;location</a></button>
+                <br>
+                <button class="btn btn-lg btn-block"><a href="#about"class="nav-link"><i
+                    class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;emargency
+                    contact</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid"id="departments">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center text-primary">departments</h4>
+            <h1 class="text-center">medical services</h1>
+        </div>
+    </div>
+</div>
+<div class="card shadow text-center items"style="hight:159px;">
+    <div class="card-img">
+        <img src="{% static 'images/1.jfif' %}" style="margin-left: auto; margin-right:auto; width: 25%; padding-top:5px">
+    </div>
+        <div class="card-body">
+            <p class="card-text">gynacalogist and obstetrician</p>
+        </div>
+    </div>
+    <div class="card shadow text-center items"style="hight:159px;">
+        <div class="card-img">
+            <img src="{% static 'images/1.jfif' %}" style="margin-left: auto; margin-right:auto; width: 25%; padding-top:5px">
+        </div>
+        <div class="card-body">
+            <p class="card-text">orthopetic and surgery</p>
+        </div>
+    </div>
+    <div class="card shadow text-center items"style="hight:159px;">
+        <div class="card-img">
+            <img src="{% static 'images/1.jfif' %}"style="margin-left: auto; margin-right: auto; width: 25%; padding-top:5px;">
+
+        </div>
+        <div class="card-body">
+            <p class="card-text">genral and laparoscopic surgery</p>
+        </div>
+    </div>
+    <div class="card shadow text-center items"style=" height: 159px;">
+        <div class="card-img">
+            <img src="{% static 'images/1.jfif' %}" style="margin-left: auto; margin-right: auto; width: 25%; padding-top: 5px;">
+        </div>
+
+        <div class="card-body">
+            <p class="card-text">physician</p>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="services">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">other services</h1>
+            </div>
+        </div>
+        <div class="card shadow text-center items">
+            <div class="card-img">
+                <img src="{% static 'images/1.jfif' %} " alt=""
+                    style="margin-left: auto; margin-right: auto; width: 25%;">
+            </div>
+            <div class="card-body">
+                <p class="card-text">emargency</p>
+            </div>
+        </div>
+            <div class="card shadow text-center items">
+                <div class="card-img">
+                    <img src="{% static 'images/1.jfif' %} " alt=""
+                        style="margin-left: auto; margin-right: auto; width: 25%;">
+                </div>
+                <div class="card-body">
+                <p class="card-text">pharmacy</p>
+            </div>
+        </div>
+        
+        <div class="card shadow text-center items">
+            <div class="card-img">
+                <img src="{% static 'images/1.jfif' %} " alt=""
+                    style="margin-left: auto; margin-right: auto; width: 25%;">
+            </div>
+            <div class="card-body">
+                <p class="card-text">endoscopy</p>
+            </div> 
+        </div>
+        <div class="card shadow text-center items">
+            <div class="card-img">
+                <img src="{% static 'images/1.jfif' %} " alt=""
+                    style="margin-left: auto; margin-right: auto; width: 25%;">
+            </div>
+            <div class="card-body">
+                <p class="card-text">echo services</p>
+            </div>
+        </div>
+        <div class="card shadow text-center items">
+            <div class="card-img">
+                <img src="{% static 'images/1.jfif' %} " alt=""
+                    style="margin-left: auto; margin-right: auto; width: 25%;">
+            </div>
+            <div class="card-body">
+                <p class="card-text">digital x-ray</p>
+            </div>
+        </div>
+        <div class="card shadow text-center items">
+            <div class="card-img">
+                <img src="{% static 'images/1.jfif' %} " alt=""
+                    style="margin-left: auto; margin-right: auto; width: 25%;">
+            </div>
+            <div class="card-body">
+                <p class="card-text">lab</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+            <h1 class="text-center text-primary">our team expets</h1>
+        </div>
+        <div class="carousel-inner">
+            <img src=" " style="max-width: 100%;">
+
+        </div>
+        <div class="container-fluid" id="docters">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center text-primary">meet our team</h4>
+                    <h1 class="text-center">specialist docters</h1>
+                </div>
+            </div>
+            <div class="row owl-carousel owl-theme">
+                <div class="card shadow text-center items">
+                    <div class="card body profile-card-card">
+                        <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/person.jfif' %}"
+                        style="height: 30px; width: 50px;">
+                        <h4 class="card-title" style="front-size 18px;">dr.xyz</h4>
+                        <h6 class="card-subtitle">senior consultant surgeon</h6>
+                        <p class="card-text">mbbs,ms(tu),fmas,dmas(wlh)</p>
+
+                    </div>
+                </div>
+                <div class="row owl-carousel owl-theme">
+                    <div class="card shadow text-center items">
+                        <div class="card body profile-card-card">
+                            <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/person.jfif' %}"
+                            style="height: 30px; width: 50px;">
+                            <h4 class="card-title" style="front-size 18px;">dr.lucky sharma</h4>
+                            <h6 class="card-subtitle">gynacalogist and obstetrician</h6>
+                            <p class="card-text">mbbs,md (nmc)</p>
+                            
+                        </div>
+                    </div>
+                    <div class="row owl-carousel owl-theme">
+                        <div class="card shadow text-center items">
+                            <div class="card body profile-card-card">
+                                <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/person.jfif' %}"
+                                style="height: 30px; width: 50px;">
+                                <h4 class="card-title" style="front-size 18px;">dr.abc</h4>
+                                <h6 class="card-subtitle">orthopetic surgeon</h6>
+                                <p class="card-text">mbbs,ms orthopetic</p>
+                                
+                            </div>
+                        </div>
+                        <div class="row owl-carousel owl-theme">
+                            <div class="card shadow text-center items">
+                                <div class="card body profile-card-card">
+                                    <img class="img-thumbnail rounded-circle border-0" src="{% static 'images/person.jfif' %}"
+                                    style="height: 30px; width: 50px;">
+                                    <h4 class="card-title" style="front-size 18px;">dr.dev</h4>
+                                    <h6 class="card-subtitle">genral physician</h6>
+                                    <p class="card-text">mbbs,md</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+  
+
+    
+                    {% endblock %} {% include 'footer.html' %}
